@@ -21,6 +21,6 @@ async function bootstrap() {
     console.log('Body:', req.body); // Requires body-parser (enabled by default)
     next();
   });
-  await app.listen(3000);
+  await app.listen(3000, '0.0.0.0');
 }
 bootstrap();
